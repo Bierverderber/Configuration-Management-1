@@ -68,10 +68,19 @@ class SimpleShell:
         self.output_area.config(state='disabled')
     
     def expand_vars(self, text):
-        """Раскрытие переменных типа $HOME"""
+        """Раскрытие переменных типа $HOME, $USER, $PWD"""
         def replace(match):
             var = match.group(1)
-            return os.getenv(var, f'${var}')
+            if var == "HOME":
+                return os.path.expanduser("~")
+            elif var == "USER":
+                return self.username
+            elif var == "PWD":
+                return self.current_dir
+            elif var == "HOSTNAME":
+                return self.hostname
+            else:
+                return os.getenv(var, f'${var}')
         
         return re.sub(r'\$(\w+)', replace, text)
     
@@ -116,7 +125,6 @@ class SimpleShell:
         else:
             self.print_text(f"ls: вывод списка файлов в {args[0]} (заглушка)\n")
         
-    
     def do_cd(self, args):
         self.print_text(f"Команда 'cd' вызвана с аргументами: {args}\n")
         
@@ -124,7 +132,6 @@ class SimpleShell:
             self.print_text("cd: переход в домашнюю директорию (заглушка)\n")
         else:
             self.print_text(f"cd: переход в директорию {args[0]} (заглушка)\n")
-        
     
     def do_help(self):
         help_text = """
@@ -132,15 +139,27 @@ class SimpleShell:
 
 ls [путь]    - показать имя команды и аргументы
              Пример: ls /home → выведет "ls вызвана с аргументами: ['/home']"
+             Пример: ls $HOME → выведет "ls вызвана с аргументами: ['/home/username']"
 
 cd [путь]    - показать имя команды и аргументы  
              Пример: cd /tmp → выведет "cd вызвана с аргументами: ['/tmp']"
+             Пример: cd $HOME → выведет "cd вызвана с аргументами: ['/home/username']"
 
 exit         - выход из эмулятора
 help         - эта справка
 
-Переменные окружения: $HOME, $USER, $PWD и др.
-Пример: cd $HOME → cd вызвана с аргументами: ['/home/username']
+ПОДДЕРЖИВАЕМЫЕ ПЕРЕМЕННЫЕ ОКРУЖЕНИЯ:
+  $HOME      - домашняя директория пользователя
+  $USER      - имя пользователя
+  $PWD       - текущая директория
+  $HOSTNAME  - имя хоста
+  $PATH      - переменная PATH системы
+  Любые другие переменные окружения ($TERM, $SHELL, $LANG и т.д.)
+
+Примеры:
+  cd $HOME
+  ls $PWD
+  cd /tmp && echo $USER
 
 """
         self.print_text(help_text)
