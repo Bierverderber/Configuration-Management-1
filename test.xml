@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shell_log>
+
+<event>
+  <timestamp>2025-12-19T21:13:37.545919</timestamp>
+  <username>Арсен</username>
+  <command>ls</command>
+  <arguments>[]</arguments>
+  <success>True</success>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:13:37.553320</timestamp>
+  <username>Арсен</username>
+  <command>cd</command>
+  <arguments>['/tmp']</arguments>
+  <success>True</success>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:13:37.558860</timestamp>
+  <username>Арсен</username>
+  <command>ls</command>
+  <arguments>[]</arguments>
+  <success>True</success>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:13:37.570846</timestamp>
+  <username>Арсен</username>
+  <command>cd</command>
+  <arguments>['C:\\Arsen\\Studying\\Конфигурационное', 'управление\\Configuration-Management-1']</arguments>
+  <success>True</success>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:13:37.575914</timestamp>
+  <username>Арсен</username>
+  <command>help</command>
+  <arguments>[]</arguments>
+  <success>True</success>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:13:37.577923</timestamp>
+  <username>Арсен</username>
+  <command>РѕС€РёР±РєР°</command>
+  <arguments>[]</arguments>
+  <success>False</success>
+  <error>Неизвестная команда</error>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:13:37.577923</timestamp>
+  <username>Арсен</username>
+  <command>РѕС€РёР±РєР°РІР°РІР°</command>
+  <arguments>[]</arguments>
+  <success>False</success>
+  <error>Неизвестная команда</error>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:13:37.577923</timestamp>
+  <username>Арсен</username>
+  <command>РІР»Р°Р°</command>
+  <arguments>[]</arguments>
+  <success>False</success>
+  <error>Неизвестная команда</error>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:13:37.577923</timestamp>
+  <username>Арсен</username>
+  <command>cd</command>
+  <arguments>[]</arguments>
+  <success>True</success>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:13:37.592235</timestamp>
+  <username>Арсен</username>
+  <command>ls</command>
+  <arguments>[]</arguments>
+  <success>True</success>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:14:19.687589</timestamp>
+  <username>Арсен</username>
+  <command>ls</command>
+  <arguments>['C:\\Arsen\\Studying\\Конфигурационное', 'управление\\Configuration-Management-1']</arguments>
+  <success>True</success>
+</event>

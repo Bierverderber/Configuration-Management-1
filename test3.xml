@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shell_log>
+
+<event>
+  <timestamp>2025-12-19T21:22:14.105810</timestamp>
+  <username>Арсен</username>
+  <command>ls</command>
+  <arguments>[]</arguments>
+  <success>True</success>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:22:14.115708</timestamp>
+  <username>Арсен</username>
+  <command>cd</command>
+  <arguments>['/tmp']</arguments>
+  <success>True</success>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:22:14.120561</timestamp>
+  <username>Арсен</username>
+  <command>ls</command>
+  <arguments>[]</arguments>
+  <success>True</success>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:22:14.125950</timestamp>
+  <username>Арсен</username>
+  <command>cd</command>
+  <arguments>['C:\\Arsen\\Studying\\Конфигурационное', 'управление\\Configuration-Management-1']</arguments>
+  <success>True</success>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:22:14.135883</timestamp>
+  <username>Арсен</username>
+  <command>help</command>
+  <arguments>[]</arguments>
+  <success>True</success>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:22:14.139590</timestamp>
+  <username>Арсен</username>
+  <command>script_error</command>
+  <arguments>['line 6: ошибка']</arguments>
+  <success>False</success>
+  <error>Неизвестная команда</error>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:22:14.139590</timestamp>
+  <username>Арсен</username>
+  <command>script_error</command>
+  <arguments>['line 7: ошибкавава']</arguments>
+  <success>False</success>
+  <error>Неизвестная команда</error>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:22:14.145672</timestamp>
+  <username>Арсен</username>
+  <command>script_error</command>
+  <arguments>['line 8: влаа']</arguments>
+  <success>False</success>
+  <error>Неизвестная команда</error>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:22:14.148468</timestamp>
+  <username>Арсен</username>
+  <command>cd</command>
+  <arguments>[]</arguments>
+  <success>True</success>
+</event>
+
+<event>
+  <timestamp>2025-12-19T21:22:14.150580</timestamp>
+  <username>Арсен</username>
+  <command>ls</command>
+  <arguments>[]</arguments>
+  <success>True</success>
+</event>

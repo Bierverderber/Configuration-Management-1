@@ -1,0 +1,16 @@
+ls
+cd /tmp
+ls
+cd $PWD
+help
+ошибка
+ошибкавава
+влаа
+
+
+
+
+cd
+ls 
+
+exit
